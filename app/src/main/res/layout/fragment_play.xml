@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    tools:context=".fragments.PlayFragment">
+
+    <ImageButton
+        android:id="@+id/imageView2"
+        android:layout_width="65dp"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/play_button_background"
+        android:src="@drawable/ic_baseline_music_note_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/result"
+        android:layout_width="65dp"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/play_button_background"
+        android:src="@drawable/ic_baseline_star_24"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_easy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/play_button_background"
+        android:text="@string/easy"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/button_normal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/play_button_background"
+        android:text="@string/normal"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_easy" />
+
+    <Button
+        android:id="@+id/button_medium"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/play_button_background"
+        android:text="@string/medium"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_normal" />
+
+    <Button
+        android:id="@+id/button_hard"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/play_button_background"
+        android:text="@string/hard"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_medium" />
+
+    <Button
+        android:id="@+id/button_expert"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/play_button_background"
+        android:text="@string/expert"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hard" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button_info"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/play_button_background"-->
+<!--        android:text="@string/info"-->
+<!--        android:textColor="#ffff"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button_expert" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

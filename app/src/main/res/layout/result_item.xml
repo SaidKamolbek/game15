@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:id="@+id/result_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D0A4A8A8" />
+
+    <TextView
+        android:id="@+id/result_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/_123"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="@string/palonkas"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toEndOf="@id/result_place"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moves"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/time2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline7"
+        app:layout_constraintRight_toLeftOf="@id/moves_value"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="224dp" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/time_value"
+        app:layout_constraintStart_toStartOf="@id/moves"
+        app:layout_constraintTop_toBottomOf="@+id/moves"
+        tools:layout_editor_absoluteX="224dp" />
+
+    <TextView
+        android:id="@+id/moves_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_123"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/time_value"
+        app:layout_constraintLeft_toRightOf="@id/moves"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="317dp" />
+
+    <TextView
+        android:id="@+id/time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_time"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/moves_value"
+        app:layout_constraintTop_toBottomOf="@+id/moves_value"
+        tools:layout_editor_absoluteX="313dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
